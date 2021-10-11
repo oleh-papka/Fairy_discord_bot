@@ -1,0 +1,9 @@
+discord.py[voice]
+requests
+psycopg2
+youtube_dl
+Levenshtein
+thefuzz
+ffmpeg
+tabulate
+pytube

@@ -1069,10 +1069,9 @@ class Music(commands.Cog):
         voices = self.bot.voice_clients
         for voice in voices:
             if voice.is_connected():
-                if not voice.is_playing():
+                if not voice.is_playing() and not voice.is_paused():
                     voice.stop()
                     await voice.disconnect()
-
 
 
 def setup(bot):
